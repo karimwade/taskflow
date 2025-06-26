@@ -1,0 +1,156 @@
+/* Thèmes globaux */
+body.light {
+  background-color: #f8fafc;
+  color: #111827;
+}
+body.dark {
+  background-color: #1f2937;
+  color: #f9fafb;
+}
+
+.dashboard {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.btn-logout,
+.btn-add {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-logout {
+  background-color: #ef4444;
+}
+
+.task-input {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.task-input input {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.kanban {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.column {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 6px;
+  min-height: 300px;
+  transition: background-color 0.3s ease;
+  border: 1px solid #ccc;
+}
+
+.column h2 {
+  margin-bottom: 1rem;
+}
+
+/* Couleurs par statut */
+.column.pending {
+  background-color: #fef9c3;
+}
+.column.inprogress {
+  background-color: #dbeafe;
+}
+.column.done {
+  background-color: #bbf7d0;
+}
+
+/* Mode sombre – colonnes */
+body.dark .column.pending {
+  background-color: #4b5563;
+  color: #f9fafb;
+}
+body.dark .column.inprogress {
+  background-color: #1e40af;
+  color: #f9fafb;
+}
+body.dark .column.done {
+  background-color: #065f46;
+  color: #f9fafb;
+}
+body.dark .column h2 {
+  color: #f9fafb;
+}
+
+/* Mode sombre – input */
+body.dark .task-input input {
+  background-color: #374151;
+  color: #f9fafb;
+  border: 1px solid #4b5563;
+}
+
+/* Tâches */
+.task {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  color: #111827;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  cursor: grab;
+  user-select: none;
+}
+.task:hover {
+  background-color: #f1f5f9;
+}
+
+/* Tâches en mode sombre */
+body.dark .task {
+  background-color: #111827;
+  color: #f9fafb;
+  border: 1px solid #4b5563;
+}
+body.dark .task:hover {
+  background-color: #1e293b;
+}
+
+/* Effet drop actif */
+.column.is-over {
+  outline: 2px dashed #3b82f6;
+  outline-offset: -4px;
+}
+/* Logo + titre */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 50px;
+}
+
+.app-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Message bonjour */
+.user-greeting {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-main);
+}

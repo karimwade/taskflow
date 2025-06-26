@@ -1,0 +1,110 @@
+/* ================== Couleurs globales ================== */
+body.light {
+  --bg-page: #f3f4f6;
+  --bg-card: #ffffff;
+  --text-main: #111827;
+  --border-input: #d1d5db;
+}
+body.dark {
+  --bg-page: #111827;
+  --bg-card: #1f2937;
+  --text-main: #f3f4f6;
+  --border-input: #374151;
+}
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  padding: 1rem;
+}
+
+/* -------------------- Carte -------------------- */
+.card {
+  background-color: var(--bg-card);
+  border-radius: 1rem;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.10);
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+/* -------------------- Formulaire -------------------- */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.auth-form input {
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-input);
+  font-size: 1rem;
+  background: var(--bg-page);
+  color: var(--text-main);
+}
+
+.auth-form input:focus {
+  outline: 2px solid transparent;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.4); /* anneau bleu */
+}
+
+/* -------------------- Boutons -------------------- */
+.btn-primary,
+.btn-success {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+.btn-primary {
+  background-color: #2563eb;        /* bleu */
+}
+.btn-primary:hover {
+  background-color: #1e40af;
+}
+
+.btn-success {
+  background-color: #16a34a;        /* vert */
+}
+.btn-success:hover {
+  background-color: #065f46;
+}
+.logo-container {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.logo {
+  height: 60px;
+  margin-bottom: 0.5rem;
+}
+
+.app-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.welcome-text {
+  font-size: 1rem;
+  color: var(--text-main);
+  opacity: 0.8;
+  margin-top: 0.25rem;
+}

@@ -1,0 +1,35 @@
+body.light {
+  background-color: #f7f7f7;
+  color: #1a1a1a;
+}
+
+body.dark {
+  background-color: #1a1a1a;
+  color: #f7f7f7;
+}
+
+button {
+  cursor: pointer;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #999;
+  color: white;
+  font-weight: bold;
+}
+
+body.dark .theme-toggle {
+  background-color: #444;
+  color: #fff;
+}
+
+body.light .theme-toggle {
+  background-color: #ccc;
+  color: #000;
+}
